@@ -125,3 +125,40 @@ Traceback (most recent call last):
   File "F:\pycharm-project\opcode_django\backend\views.py", line 41, in get_opcode_file_md5
     origin_result = json_data[params_aliuid][params_uuid]
 KeyError: '2649ab00c2a10567448a45fd6ec09add'
+[2021-01-05 19:51:12,017][Thread-2:22640][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-05 20:47:24,101][Thread-2:23236][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 63, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 309, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 20:47:53,766][Thread-1:12656][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 63, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 309, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range

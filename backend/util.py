@@ -13,6 +13,10 @@ def generate_opcode_csv(aliuid, uuid, file_md5):
     all_data = cursor.fetchall()
     ecs_force_and_file = [dict(zip([col[0] for col in desc], row)) for row in all_data]
 
+    if not ecs_force_and_file:
+        result_data = []
+        return result_data
+
     # 读敏感函数文件
     sensitive_set = set(SENSITIVE_FUNC)
 

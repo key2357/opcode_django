@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opcode检查-new
+    </title>
+
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+ 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="../js/jquery.min.js"></script>
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+ 
+ 
+<!--或者下载到本地，下面有下载地址-->
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="DataTables-1.10.21/media/css/jquery.dataTables.css">
+ 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="DataTables-1.10.21/media/js/jquery.js"></script>
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="DataTables-1.10.21/media/js/jquery.dataTables.js"></script>
+    <script src="../js/vue.js"></script>
+    <!-- axios的数据包 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+</head>
+<style>
+    body{
+        width: 1200px;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    .app{
+        width: 1200px;
+        height: 100%;
+    } 
+
+ 
+    tr td,th{
+        text-align: center;
+    }
+
+    .check_input{
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .check_input input{
+        width: 300px;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    .sub_btn,.getmd_btn{
+        /* text-align: center; */
+        /* margin:0 auto; */
+        margin-left: 50px;
+    }
+
+</style>
+
+<body>
+    <div class="app">
+        <h1 style="text-align: center;">opcode检查</h1>
+        <div class="check_input">
+            用 户：<input type="text" class="al_user" v-on:keyup.enter
+            ="gets_uuid" v-model="value"> 
+           <br>
+
+            uuid：<input type="text" class="input_uuid" v-model="choose_uuid">
+            <br>
+
+            <input type="button" value="获取文件" class="getmd_btn">
+
+            md5：<input type="text" class="input_md5" v-model="choose_md5">
+            <br>
+            <input type="button" value="opcode层次图" class="sub_btn">
+
+        </div>
+        
+
+        <div class="uuid_list">
+            <h3>uuid列表</h3>
+            <table id="table_uuid" class="display">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>uuid</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  v-for="(item,index) in datas">
+                        <td>{{index}}</td>
+                        <td>{{item}}</td>
+                        <td>
+                            <button class="btn btn-danger btn-xs del_row" v-on:click="check_uuid(index,item)">add_uuid</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="md5_list">
+            <h3>md5列表</h3>
+            <table id="table_md5" class="display">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>md5</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  v-for="(item,index) in md5_datas">
+                        <td>{{index}}</td>
+                        <td>{{item}}</td>
+                        <td>
+                            <button class="btn btn-danger btn-xs del_row" v-on:click="check_md5(index,item)">add_md5</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        
+    </div>
+
+</body>
+<script>
+    $(document).ready( function () {
+    $('#table_uuid').DataTable();
+    $('#table_md5').DataTable();
+} );
+</script>
+
+<script>
+    var app = new Vue({
+        el: '.app',
+        data: {
+            value:'2649ab00c2a10567448a45fd6ec09add',
+            datas:['11','22','33','44','55'],
+            md5_datas:['文件1','文件2','文件3','文件4'],
+            choose_uuid:'',
+            choose_md5:'',
+
+        },
+        methods: {
+            //得到uuid
+            // async gets_uuid: function () {
+            //     let  info = await this.$axios({
+            //         url:"http://127.0.0.1:8000/getOpcodeUuid",
+            //         method:'post',
+            //         data:{
+            //             aliuid : '2649ab00c2a10567448a45fd6ec09add'
+            //         }
+            //     }).then(function (res) {
+            //                 console.log(res.data);
+            //             },function (err) {
+            //                 console.log(err);
+            //             })
+            // },
+            gets_uuid: function () {
+                user={
+                    aliuid:'2649ab00c2a10567448a45fd6ec09add'
+                }
+                user = JSON.stringify(user)
+                axios.post('http://127.0.0.1:8000/getOpcodeUuid',user).then(function(res){
+                console.log(res)
+            },function(err){
+                console.log(err)
+            })
+
+            },
+
+
+            //根据uuid，得到文件
+            gets_md5: function(){
+
+            },
+
+            //选中uuid进行核查
+
+            check_uuid:function(index,item){
+                console.log("输出uuid所在编号")
+                console.log(index)
+                this.choose_uuid=item
+
+            },
+
+            check_md5:function(index,item){
+                console.log("输出md5所在编号")
+                console.log(index)
+                this.choose_md5=item
+            }
+
+        }
+    })
+</script>
+</html>

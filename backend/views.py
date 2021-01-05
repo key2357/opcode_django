@@ -56,11 +56,13 @@ def get_opcode_tree_map(request):
     tree_type = params['tree_type']   # 分为all_point stain
 
     # params_aliuid = '2649ab00c2a10567448a45fd6ec09add'
-    # params_uuid = 'a889f5ee466a326539356f938502f1a2'
-    # params_file_md5 = '899e763467eba8a2a340c975b7de1d02'
+    # params_uuid = '4d9b49f9a469cc6358846f70caaaa23e'
+    # params_file_md5 = '76b726ecd69b40cffd3ffdebbeab9bfc'
     # tree_type = 'all_point'
     opcode_csv = generate_opcode_csv(params_aliuid, params_uuid, params_file_md5)
-    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+    if not opcode_csv:
+        return HttpResponse(json.dumps({}), content_type='application/json')
 
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
     return HttpResponse(json.dumps(opcode_tree[0]), content_type='application/json')
 

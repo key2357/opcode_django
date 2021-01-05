@@ -203,3 +203,73 @@ KeyError: '2649ab00c2a10567448a45fd6ec09add'
 [2021-01-05 15:37:40,475][Thread-1:11508][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
 [2021-01-05 15:37:57,868][MainThread:30356][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
 [2021-01-05 15:37:59,802][Thread-1:26300][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 19:51:11,611][MainThread:22636][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 19:51:12,017][Thread-2:22640][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-05 19:51:12,277][Thread-2:22640][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 19:51:30,375][MainThread:31768][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 19:51:32,112][Thread-5:25740][task_id:django.request][log.py:224][WARNING][Not Found: /js/vue.js]
+[2021-01-05 19:51:32,114][Thread-1:3928][task_id:django.request][log.py:224][WARNING][Not Found: /js/jquery.min.js]
+[2021-01-05 19:51:32,116][Thread-3:26128][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/js/jquery.js]
+[2021-01-05 19:51:32,117][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/css/jquery.dataTables.css]
+[2021-01-05 19:51:32,121][Thread-4:28192][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/js/jquery.dataTables.js]
+[2021-01-05 19:51:33,560][Thread-4:28192][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/css/jquery.dataTables.css]
+[2021-01-05 19:51:33,561][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/js/jquery.js]
+[2021-01-05 19:51:33,568][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/js/jquery.dataTables.js]
+[2021-01-05 19:51:33,578][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /js/vue.js]
+[2021-01-05 19:51:34,901][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 19:53:49,398][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/css/jquery.dataTables.css]
+[2021-01-05 19:55:09,251][Thread-2:24820][task_id:django.request][log.py:224][WARNING][Not Found: /js/jquery.min.js]
+[2021-01-05 19:55:09,253][Thread-4:28192][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/css/jquery.dataTables.css]
+[2021-01-05 19:55:09,253][Thread-3:26128][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/js/jquery.js]
+[2021-01-05 19:55:09,255][Thread-1:3928][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/js/jquery.dataTables.js]
+[2021-01-05 19:55:09,259][Thread-5:25740][task_id:django.request][log.py:224][WARNING][Not Found: /js/vue.js]
+[2021-01-05 19:55:17,181][Thread-5:25740][task_id:django.request][log.py:224][WARNING][Not Found: /DataTables-1.10.21/media/css/jquery.dataTables.css]
+[2021-01-05 20:47:23,650][MainThread:7628][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 20:47:24,101][Thread-2:23236][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 63, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 309, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 20:47:24,374][Thread-2:23236][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 20:47:52,085][MainThread:21716][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 20:47:53,766][Thread-1:12656][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 63, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 309, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 20:47:54,038][Thread-1:12656][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 20:49:59,656][MainThread:21716][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 20:50:00,821][MainThread:32244][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 20:50:16,454][MainThread:19380][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 20:50:20,178][Thread-1:10024][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 20:58:14,068][MainThread:27640][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 20:58:16,529][Thread-2:14672][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 23:27:06,615][MainThread:11040][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 23:27:17,133][MainThread:18284][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 23:27:18,903][Thread-1:7676][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]

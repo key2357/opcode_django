@@ -20,7 +20,7 @@ from backend import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name="index.html")),
+    path('', TemplateView.as_view(template_name="opcode.html")),
     path('test/', views.test),
     path('getOpcodeTreeMap', views.get_opcode_tree_map),
     path('getOpcodeUuid', views.get_opcode_uuid),
