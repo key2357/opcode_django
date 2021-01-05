@@ -1,0 +1,205 @@
+[2021-01-05 13:59:47,517][MainThread:27516][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:00:35,923][MainThread:30184][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:01:29,615][MainThread:5468][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:01:33,106][Thread-1:4668][task_id:django.request][log.py:224][WARNING][Not Found: /]
+[2021-01-05 14:01:33,226][Thread-1:4668][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:01:56,420][MainThread:20828][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:02:01,062][Thread-1:25604][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:15:53,394][MainThread:20828][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:15:54,329][MainThread:19088][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:17:27,977][MainThread:21320][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:17:44,629][MainThread:15924][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:17:48,246][Thread-1:8120][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 312, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:17:48,506][Thread-1:8120][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:18:59,956][MainThread:9492][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:19:01,676][Thread-1:10796][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 312, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:19:01,943][Thread-1:10796][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:20:26,679][MainThread:27176][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:20:28,337][Thread-1:32264][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 310, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:20:28,606][Thread-1:32264][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:20:38,734][MainThread:27176][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\util.py changed, reloading.]
+[2021-01-05 14:20:39,571][MainThread:820][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:21:01,669][MainThread:820][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:21:02,469][MainThread:5900][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:21:14,363][MainThread:24216][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:21:14,752][Thread-2:9356][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 310, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:21:45,921][MainThread:24216][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\util.py changed, reloading.]
+[2021-01-05 14:21:46,749][MainThread:26092][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:21:50,777][MainThread:3408][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:21:52,456][Thread-1:19068][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 310, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:21:52,729][Thread-1:19068][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:23:02,416][MainThread:3580][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:25:18,679][MainThread:3580][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:25:19,462][MainThread:20528][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:35:55,701][MainThread:20528][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\util.py changed, reloading.]
+[2021-01-05 14:35:56,585][MainThread:17552][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:36:35,505][MainThread:12996][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:36:36,787][MainThread:12996][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:36:37,622][MainThread:22136][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:36:39,196][Thread-1:31700][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:43:04,349][MainThread:12904][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:43:18,165][MainThread:12904][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:43:19,014][MainThread:20948][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:43:22,883][MainThread:24776][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:44:36,235][Thread-1:9708][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 14:44:55,320][MainThread:24776][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:44:56,153][MainThread:9376][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:46:05,460][MainThread:9376][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:46:06,272][MainThread:28292][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:46:12,754][MainThread:28292][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:46:13,616][MainThread:30000][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:49:27,233][MainThread:30000][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:49:28,029][MainThread:6020][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:53:03,695][MainThread:22468][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:53:27,720][MainThread:22468][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:53:28,654][MainThread:8492][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:55:25,631][MainThread:8492][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\opcode_django\urls.py changed, reloading.]
+[2021-01-05 14:55:28,708][MainThread:11504][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:56:12,113][MainThread:19112][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:56:30,385][MainThread:6820][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:58:41,094][MainThread:6820][task_id:django.utils.autoreload][autoreload.py:240][INFO][F:\pycharm-project\opcode_django\backend\views.py changed, reloading.]
+[2021-01-05 14:58:44,546][MainThread:1668][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 14:58:56,493][MainThread:23184][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:31:01,950][MainThread:22008][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:31:04,032][Thread-1:27316][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('./data/opcode_aliuid', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_aliuid'
+[2021-01-05 15:31:04,381][Thread-1:27316][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:31:58,426][MainThread:5016][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:32:00,069][Thread-2:11512][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('../backend/data/opcode_aliuid', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '../backend/data/opcode_aliuid'
+[2021-01-05 15:32:00,338][Thread-2:11512][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:32:45,475][MainThread:6876][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:32:45,848][Thread-2:18484][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('./data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_uuid.json'
+[2021-01-05 15:33:06,765][MainThread:13020][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:33:10,436][Thread-1:18552][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('./data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_uuid.json'
+[2021-01-05 15:33:10,698][Thread-1:18552][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:33:45,754][MainThread:22116][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:33:47,419][Thread-1:30796][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 17, in get_opcode_uuid
+    with open('./data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_uuid.json'
+[2021-01-05 15:33:47,674][Thread-1:30796][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:34:21,921][MainThread:6484][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:34:25,490][Thread-1:27892][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 17, in get_opcode_uuid
+    with open('data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/opcode_uuid.json'
+[2021-01-05 15:34:25,752][Thread-1:27892][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:35:45,018][MainThread:12428][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:35:48,723][Thread-1:28124][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open(BASE_DIR + '/backend/data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+TypeError: unsupported operand type(s) for +: 'WindowsPath' and 'str'
+[2021-01-05 15:35:48,981][Thread-1:28124][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:36:09,650][MainThread:31056][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:36:13,332][Thread-1:14192][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:36:51,821][MainThread:11068][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:36:56,747][Thread-1:25748][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 41, in get_opcode_file_md5
+    origin_result = json_data[params_aliuid][params_uuid]
+KeyError: '2649ab00c2a10567448a45fd6ec09add'
+[2021-01-05 15:36:56,992][Thread-1:25748][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:37:38,806][MainThread:3512][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:37:40,475][Thread-1:11508][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-05 15:37:57,868][MainThread:30356][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-05 15:37:59,802][Thread-1:26300][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]

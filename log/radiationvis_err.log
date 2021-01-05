@@ -1,0 +1,127 @@
+[2021-01-05 14:17:48,246][Thread-1:8120][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 312, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:19:01,676][Thread-1:10796][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 312, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:20:28,337][Thread-1:32264][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 310, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:21:14,752][Thread-2:9356][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 310, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 14:21:52,456][Thread-1:19068][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 25, in get_opcode_tree_map
+    opcode_tree = generate_opcode_tree(opcode_csv, tree_type)
+  File "F:\pycharm-project\opcode_django\backend\util.py", line 310, in generate_opcode_tree
+    ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
+IndexError: list index out of range
+[2021-01-05 15:31:04,032][Thread-1:27316][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('./data/opcode_aliuid', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_aliuid'
+[2021-01-05 15:32:00,069][Thread-2:11512][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('../backend/data/opcode_aliuid', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '../backend/data/opcode_aliuid'
+[2021-01-05 15:32:45,848][Thread-2:18484][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('./data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_uuid.json'
+[2021-01-05 15:33:10,436][Thread-1:18552][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open('./data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_uuid.json'
+[2021-01-05 15:33:47,419][Thread-1:30796][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 17, in get_opcode_uuid
+    with open('./data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: './data/opcode_uuid.json'
+[2021-01-05 15:34:25,490][Thread-1:27892][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 17, in get_opcode_uuid
+    with open('data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/opcode_uuid.json'
+[2021-01-05 15:35:48,723][Thread-1:28124][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeUuid]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 18, in get_opcode_uuid
+    with open(BASE_DIR + '/backend/data/opcode_uuid.json', 'r', encoding='utf8') as fp:
+TypeError: unsupported operand type(s) for +: 'WindowsPath' and 'str'
+[2021-01-05 15:36:56,747][Thread-1:25748][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 41, in get_opcode_file_md5
+    origin_result = json_data[params_aliuid][params_uuid]
+KeyError: '2649ab00c2a10567448a45fd6ec09add'
