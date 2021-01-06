@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 
 # Add for vue.js
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "frontend/dist/static"),
+    os.path.join(BASE_DIR, "frontend/static"),
 ]
 
 # 部署到云服务上必备

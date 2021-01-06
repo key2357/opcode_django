@@ -162,3 +162,99 @@ Traceback (most recent call last):
   File "F:\pycharm-project\opcode_django\backend\util.py", line 309, in generate_opcode_tree
     ge_tree(now_node, iteration, parent, file_uuid_md5_info, opcode_csv[0]['uuid'] + opcode_csv[0]['file_md5'])
 IndexError: list index out of range
+[2021-01-06 16:47:03,507][Thread-2:19448][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 16:53:10,875][Thread-1:7648][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 16:53:36,358][Thread-1:7648][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 17:08:56,552][Thread-1:16336][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 17:32:41,753][Thread-2:8124][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
+[2021-01-06 17:32:41,800][Thread-1:27372][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
+[2021-01-06 17:33:19,946][Thread-1:6872][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
+[2021-01-06 17:33:25,742][Thread-1:6872][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'

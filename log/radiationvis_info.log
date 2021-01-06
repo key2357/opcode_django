@@ -273,3 +273,118 @@ IndexError: list index out of range
 [2021-01-05 23:27:06,615][MainThread:11040][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
 [2021-01-05 23:27:17,133][MainThread:18284][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
 [2021-01-05 23:27:18,903][Thread-1:7676][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 16:47:03,099][MainThread:1412][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 16:47:03,507][Thread-2:19448][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 16:47:03,752][Thread-2:19448][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 16:53:10,475][MainThread:24636][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 16:53:10,875][Thread-1:7648][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 16:53:11,160][Thread-1:7648][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 16:53:36,358][Thread-1:7648][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 17:08:52,939][MainThread:13636][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:08:56,552][Thread-1:16336][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeTreeMap]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 52, in get_opcode_tree_map
+    params = json.loads(request.body)
+  File "D:\environment\python\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\environment\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\environment\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-01-06 17:08:56,821][Thread-1:16336][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 17:09:07,802][MainThread:28576][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:09:09,530][Thread-2:14068][task_id:django.request][log.py:224][WARNING][Not Found: /js/vue.js]
+[2021-01-06 17:09:32,566][Thread-2:14068][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 17:10:56,369][MainThread:29804][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:11:00,059][Thread-4:4660][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 17:16:39,565][MainThread:10500][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:29:57,432][MainThread:8948][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:30:44,462][MainThread:30204][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:30:49,511][Thread-1:14060][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 17:31:43,392][MainThread:26256][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:32:29,075][MainThread:13184][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:32:41,753][Thread-2:8124][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
+[2021-01-06 17:32:41,800][Thread-1:27372][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
+[2021-01-06 17:33:13,028][MainThread:30232][task_id:django.utils.autoreload][autoreload.py:617][INFO][Watching for file changes with StatReloader]
+[2021-01-06 17:33:16,203][Thread-1:6872][task_id:django.request][log.py:224][WARNING][Not Found: /favicon.ico]
+[2021-01-06 17:33:19,946][Thread-1:6872][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
+[2021-01-06 17:33:25,742][Thread-1:6872][task_id:django.request][log.py:224][ERROR][Internal Server Error: /getOpcodeFileMd5]
+Traceback (most recent call last):
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\pycharm-project\opcode_django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pycharm-project\opcode_django\backend\views.py", line 42, in get_opcode_file_md5
+    origin_result = json_data[akey]
+KeyError: '2649ab00c2a10567448a45fd6ec09add|'
